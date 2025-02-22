@@ -60,8 +60,7 @@ if __name__ == "__main__":
     main_ws = None
     main_ws_connect(ws_url)
 
-    while True:
-        time.sleep(1)
+    threading.Event().wait()
 
 
 
